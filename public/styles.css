@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table{
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+td, th{
+    text-align: center;
+    padding: 10px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 480;
+    color: #222;
+}
+p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+h1, h2 {
+    font-size: 45px;
+    margin-top: 30px;
+    font-weight: 600px;
+    text-align: center;
+    color: #222;
+}
+
+.signup_form{
+    display: flex;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+
+.login_form{
+    display: flex;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+
+
+.form_container{
+    margin-top: 40px;
+    margin-left: 34%;
+}
+
+form {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    text-align: center;
+    padding: 10px;
+    color: green;
+}
+
+.error {
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+
+
+.enter_ur_url {
+    margin-left: 15px;
+    font-weight: medium;
+    margin-bottom: 10px;
+}
+
+.user_url_input{
+    display: flex;
+    flex-direction: wrap;
+    width: 30%;
+    margin-left: 15px;
+}
+
+.Generate_btn{
+    margin-left:15px;
+}

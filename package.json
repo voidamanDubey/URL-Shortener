@@ -1,0 +1,23 @@
+{
+  "name": "project_02-url-shortener",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "nanoid": "^5.1.0",
+    "nodemon": "^3.1.9",
+    "readline-sync": "^1.4.10",
+    "uuid": "^11.1.0"
+  }
+}
