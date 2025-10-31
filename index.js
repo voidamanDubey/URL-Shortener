@@ -11,7 +11,7 @@ const userRoute = require('./routes/user');
 const { restrictToLoggedinUserOnly , checkAuth } = require('./middleware/auth');
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;
   
 app.use(express.static('public'));
 
@@ -22,9 +22,15 @@ app.set('views', path.resolve('./views'));
 
 
 //Coonection to db
-connectToMongoDB("mongodb://localhost:27017/short-url")
-.then(() => console.log("Connected to MongoDb"))
-.catch((err) => console.log(err));
+// connectToMongoDB(process.env.MONGODB_URI)
+// connectToMongoDB("mongodb://localhost:27017/short-url")
+// .then(() => console.log("Connected to MongoDb"))
+// .catch((err) => console.log(err));
+
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/short-url";
+connectToMongoDB(MONGO_URI)
+  .then(() => console.log("Connected to MongoDb"))
+  .catch((err) => console.log(err));
 
 // Middlewares
 app.use(express.json());
@@ -55,6 +61,6 @@ app.get('/:shortId/', async (req,res) =>{
       
 });
 
-app.listen(PORT, () =>{
+app.listen(PORT, '0.0.0.0', () =>{
     console.log(`Server Started at PORT ${PORT}.`);
 }) 
